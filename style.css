@@ -1,0 +1,111 @@
+.wrapper {
+	display: grid;
+	grid-gap: 2px;
+	grid-template-columns: repeat(10, 1fr);
+	font-size: 24px;
+	font: 32px "Lalezar", sans-serif;
+	margin-top: 15vh;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+div[class^="frame"] {
+	display: grid;
+	grid-template-rows: 30px 40px 40px;
+	text-align: center;
+}
+
+.framenum {
+	color: white;
+	grid-column: span 12;
+	background: #255d00;
+	align-items: center;
+	border-radius: 5px 5px 0px 0px;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	min-width: 50px;
+}
+
+.frameroll1 {
+	grid-column: span 6;
+	background: rgb(85, 139, 47, 1);
+	border-left: 1px solid black;
+}
+
+.frameroll2 {
+	grid-column: span 6;
+	background: rgb(133, 187, 92, 1);
+	border-right: 1px solid black;
+}
+
+.frame10roll1 {
+	grid-column: span 4;
+	background: rgb(85, 139, 47, 1);
+	border-left: 1px solid black;
+}
+
+.frame10roll2 {
+	grid-column: span 4;
+	background: rgb(133, 187, 92, 1);
+}
+
+.frame10roll3 {
+	grid-column: span 4;
+	background: rgb(133, 187, 92, 1);
+	border-right: 1px solid black;
+}
+
+.framestotal {
+	grid-column: span 12;
+	background: white;
+	border-radius: 0px 0px 5px 5px;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+div[class^="frameroll"]:hover,
+div[class^="frame10roll"]:hover {
+	background: rgb(85, 139, 47, 0.45);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+div[class^="frameroll"]:active,
+div[class^="frame10roll"]:active {
+	background: rgb(0, 0, 0, 0);
+}
+
+.modal {
+	min-width: 560px;
+}
+
+.modal-title {
+	text-align: center;
+	font-size: 32px;
+}
+
+.modal-wrapper {
+	display: flex;
+	justify-content: space-around;
+}
+
+.modal-wrapper .btn {
+	background: lightblue;
+	font-size: 24px;
+}
+
+.btn-clear {
+	grid-column: 9/11;
+	font-size: 24px;
+	color: white;
+	margin: 20px;
+	background: rgb(85, 139, 47, 1);
+	transition: 0.3s;
+}
+
+.btn-clear:hover {
+	background: rgb(85, 139, 47, 0.45);
+	color: rgb(85, 139, 47, 1);
+}
